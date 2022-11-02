@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+.font-1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-2{
+    font-family: 'Fraunces', serif;
+}
+
+.weight500{
+    font-weight: 500;
+}
+
+.weight700{
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--cream);
+}
+
+.container {
+    max-width: 37.5rem;
+    display: flex;
+}
+
+.container .image img{
+    width: 18.75rem;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.container .content{
+    width: 18.75rem;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.container .content h2{
+    color: var(--dark-grayish-blue);
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .content h1{
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+
+.container .content .description{
+    color: var(--dark-grayish-blue);
+    line-height:1.5rem;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .content .price{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .content .price .sale-price{
+    font-size: 30px;
+    color: var(--dark-cyan);
+}
+
+.container .content .price .old-price{
+    font-size: 0.875rem;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
+}
+
+.container .content button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--dark-cyan);
+    color: var(--white);
+}
+
+.container .content button:hover{
+    cursor: pointer;
+    background-color:hsl(157, 33%, 22%); 
+    transition: background-color 1s ease-out;
+    box-shadow: 0 0 40px hsl(155, 48%, 58%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 38.75rem){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .image img{
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .container .content{
+        width: 100%;
+        border-radius: 0 0 0.5rem 0.5rem;
+        padding: 1.5rem;
+    }
+}

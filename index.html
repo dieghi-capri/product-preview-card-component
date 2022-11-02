@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="image">
+      <picture>
+        <source media="(max-width: 620px)" srcset="./images/image-product-mobile.jpg">
+        <img src="./images/image-product-desktop.jpg" alt="">
+      </picture>
+    </div>
+
+
+    <div class="content">
+      <h2 class="font-1 weight500">Perfume</h2>
+
+      <h1 class="font-2">Gabrielle Essence Eau De Parfum</h1>
+
+      <p class="description font-1">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+
+      <ul class="price">
+        <li class="sale-price font-2 weight700">$149.99</li>
+        <li class="old-price font-1">$169.99</li>
+      </ul>
+
+      <a href="https://github.com/dieghi-capri" target="_blank">
+        <button>
+          <img src="./images/icon-cart.svg" alt="">
+          <p class="font-1 weight700">Add to Cart</p>
+        </button>
+      </a>
+    </div>
+  </main>
+
+  <div class="attribution font-1">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/dieghi-capri" target="_blank">Caprioli Diego</a>.
+  </div>
+</body>
+
+</html>
